@@ -85,3 +85,15 @@ h1 {
   margin-bottom: 0.75rem;
   background: #fff;
 }
+
+.changesList {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.changeItem {
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 0.55rem;
+  background: #fafafa;
+}

@@ -19,6 +19,12 @@ type StatsResponse = {
     latestDocumentId: string;
     latestEventType: "update" | "insert" | "unknown";
     latestFields: Record<string, unknown>;
+    recentChanges: Array<{
+      eventAt: string;
+      eventType: "update" | "insert";
+      documentId: string;
+      fields: Record<string, unknown>;
+    }>;
   }>;
   error?: string;
   details?: string;
@@ -168,6 +174,25 @@ export default function HomePage() {
                         ? Object.entries(item.latestFields).map(([key, value]) => `${key}: ${String(value)}`).join("\n")
                         : "Geen veld-preview"}
                     </pre>
+                    <p><strong>Recent changes:</strong></p>
+                    {!item.recentChanges.length ? (
+                      <p>Geen recente changes gevonden.</p>
+                    ) : (
+                      <div className="changesList">
+                        {item.recentChanges.map((change) => (
+                          <div key={`${change.documentId}-${change.eventType}-${change.eventAt}`} className="changeItem">
+                            <p>Type: {change.eventType}</p>
+                            <p>Tijd: {formatDate(change.eventAt)}</p>
+                            <p>Doc: {change.documentId}</p>
+                            <pre className="fieldsPreview">
+                              {Object.entries(change.fields).length
+                                ? Object.entries(change.fields).map(([key, value]) => `${key}: ${String(value)}`).join("\n")
+                                : "Geen veld-preview"}
+                            </pre>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

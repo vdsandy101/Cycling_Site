@@ -16,6 +16,12 @@ type CollectionDetail = {
   latestDocumentId: string;
   latestEventType: "update" | "insert" | "unknown";
   latestFields: Record<string, unknown>;
+  recentChanges: Array<{
+    eventAt: string;
+    eventType: "update" | "insert";
+    documentId: string;
+    fields: Record<string, unknown>;
+  }>;
 };
 
 const collectionNames = [
@@ -75,6 +81,23 @@ function pickLatestFields(document: Record<string, unknown>): Record<string, unk
       out[key] = document[key];
     }
   }
+
+  if (!Object.keys(out).length) {
+    for (const [key, value] of Object.entries(document)) {
+      if (key === "_id") {
+        continue;
+      }
+      if (typeof value === "object" && value !== null) {
+        out[key] = "[object]";
+      } else {
+        out[key] = value;
+      }
+      if (Object.keys(out).length >= 12) {
+        break;
+      }
+    }
+  }
+
   return out;
 }
 
@@ -99,6 +122,48 @@ export async function GET() {
       const latestDoc = latestUpdatedDoc ?? latestInsertedDoc;
       const latestDocumentId = latestDoc?._id ? String(latestDoc._id) : "-";
 
+      const recentUpdatedDocs = await col.find({}, { sort: { updated_at: -1 }, limit: 5 }).toArray();
+      const recentInsertedDocs = await col.find({}, { sort: { _id: -1 }, limit: 5 }).toArray();
+
+      const recentChangesByKey = new Map<string, {
+        eventAt: string;
+        eventType: "update" | "insert";
+        documentId: string;
+        fields: Record<string, unknown>;
+      }>();
+
+      for (const doc of recentUpdatedDocs) {
+        const eventAt = toIsoOrNull(doc?.updated_at);
+        if (!eventAt) {
+          continue;
+        }
+        const documentId = doc?._id ? String(doc._id) : "-";
+        recentChangesByKey.set(`${documentId}:update`, {
+          eventAt,
+          eventType: "update",
+          documentId,
+          fields: pickLatestFields(doc as Record<string, unknown>),
+        });
+      }
+
+      for (const doc of recentInsertedDocs) {
+        const eventAt = objectIdTimestamp(doc?._id);
+        if (!eventAt) {
+          continue;
+        }
+        const documentId = doc?._id ? String(doc._id) : "-";
+        recentChangesByKey.set(`${documentId}:insert`, {
+          eventAt,
+          eventType: "insert",
+          documentId,
+          fields: pickLatestFields(doc as Record<string, unknown>),
+        });
+      }
+
+      const recentChanges = Array.from(recentChangesByKey.values())
+        .sort((a, b) => toTimestamp(b.eventAt) - toTimestamp(a.eventAt))
+        .slice(0, 8);
+
       const latestEventType: "update" | "insert" | "unknown" = latestUpdatedAt
         ? "update"
         : latestInsertedAt
@@ -113,6 +178,7 @@ export async function GET() {
         latestDocumentId,
         latestEventType,
         latestFields: latestDoc ? pickLatestFields(latestDoc as Record<string, unknown>) : {},
+        recentChanges,
       });
 
       const eventAt = latestUpdatedAt || latestInsertedAt;
