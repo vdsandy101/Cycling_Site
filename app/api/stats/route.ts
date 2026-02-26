@@ -3,8 +3,19 @@ import { getDb } from "@/lib/mongo";
 
 type LatestCandidate = {
   collection: string;
-  updatedAt: string;
+  eventAt: string;
+  eventType: "update" | "insert";
   document: Record<string, unknown>;
+};
+
+type CollectionDetail = {
+  collection: string;
+  count: number;
+  latestUpdatedAt: string | null;
+  latestInsertedAt: string | null;
+  latestDocumentId: string;
+  latestEventType: "update" | "insert" | "unknown";
+  latestFields: Record<string, unknown>;
 };
 
 const collectionNames = [
@@ -23,32 +34,100 @@ function toTimestamp(value: unknown): number {
   return Number.isNaN(date.getTime()) ? 0 : date.getTime();
 }
 
+function toIsoOrNull(value: unknown): string | null {
+  if (!value) return null;
+  const date = new Date(String(value));
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toISOString();
+}
+
+function objectIdTimestamp(value: unknown): string | null {
+  const raw = String(value || "");
+  if (!/^[a-f\d]{24}$/i.test(raw)) {
+    return null;
+  }
+  const seconds = Number.parseInt(raw.slice(0, 8), 16);
+  if (Number.isNaN(seconds)) {
+    return null;
+  }
+  return new Date(seconds * 1000).toISOString();
+}
+
+function pickLatestFields(document: Record<string, unknown>): Record<string, unknown> {
+  const preferredKeys = [
+    "race_id",
+    "stage_id",
+    "rider_id",
+    "team_id",
+    "race_name",
+    "stage_name",
+    "rider_name",
+    "team_name",
+    "year",
+    "position",
+    "manager_points",
+    "updated_at",
+  ];
+
+  const out: Record<string, unknown> = {};
+  for (const key of preferredKeys) {
+    if (key in document) {
+      out[key] = document[key];
+    }
+  }
+  return out;
+}
+
 export async function GET() {
   try {
     const db = await getDb();
 
     let totalEntries = 0;
     let latest: LatestCandidate | null = null;
+    const collections: CollectionDetail[] = [];
 
     for (const name of collectionNames) {
       const col = db.collection(name);
       const count = await col.countDocuments();
       totalEntries += count;
 
-      const latestDoc = await col.findOne({}, { sort: { updated_at: -1 } });
-      const updatedAt = latestDoc?.updated_at ? String(latestDoc.updated_at) : "";
+      const latestUpdatedDoc = await col.findOne({}, { sort: { updated_at: -1 } });
+      const latestInsertedDoc = await col.findOne({}, { sort: { _id: -1 } });
 
-      if (!latestDoc || !updatedAt) {
+      const latestUpdatedAt = toIsoOrNull(latestUpdatedDoc?.updated_at);
+      const latestInsertedAt = objectIdTimestamp(latestInsertedDoc?._id);
+      const latestDoc = latestUpdatedDoc ?? latestInsertedDoc;
+      const latestDocumentId = latestDoc?._id ? String(latestDoc._id) : "-";
+
+      const latestEventType: "update" | "insert" | "unknown" = latestUpdatedAt
+        ? "update"
+        : latestInsertedAt
+          ? "insert"
+          : "unknown";
+
+      collections.push({
+        collection: name,
+        count,
+        latestUpdatedAt,
+        latestInsertedAt,
+        latestDocumentId,
+        latestEventType,
+        latestFields: latestDoc ? pickLatestFields(latestDoc as Record<string, unknown>) : {},
+      });
+
+      const eventAt = latestUpdatedAt || latestInsertedAt;
+      if (!latestDoc || !eventAt) {
         continue;
       }
 
       const candidate: LatestCandidate = {
         collection: name,
-        updatedAt,
+        eventAt,
+        eventType: latestUpdatedAt ? "update" : "insert",
         document: latestDoc as Record<string, unknown>,
       };
 
-      if (!latest || toTimestamp(candidate.updatedAt) > toTimestamp(latest.updatedAt)) {
+      if (!latest || toTimestamp(candidate.eventAt) > toTimestamp(latest.eventAt)) {
         latest = candidate;
       }
     }
@@ -56,6 +135,7 @@ export async function GET() {
     return NextResponse.json({
       totalEntries,
       latestEntry: latest,
+      collections,
       checkedCollections: collectionNames,
     });
   } catch (error) {

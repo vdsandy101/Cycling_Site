@@ -41,3 +41,47 @@ h1 {
 .error {
   color: #c1121f;
 }
+
+.fieldsPreview {
+  margin: 0.5rem 0 0;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.85rem;
+}
+
+.span2 {
+  grid-column: 1 / -1;
+}
+
+.collectionList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.75rem;
+}
+
+.collectionItem {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.filterLabel {
+  display: block;
+  margin: 0.5rem 0 0.35rem;
+  font-weight: 600;
+}
+
+.collectionSelect {
+  width: 100%;
+  max-width: 280px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+}

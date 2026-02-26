@@ -7,9 +7,19 @@ type StatsResponse = {
   checkedCollections: string[];
   latestEntry: {
     collection: string;
-    updatedAt: string;
+    eventAt: string;
+    eventType: "update" | "insert";
     document: Record<string, unknown>;
   } | null;
+  collections: Array<{
+    collection: string;
+    count: number;
+    latestUpdatedAt: string | null;
+    latestInsertedAt: string | null;
+    latestDocumentId: string;
+    latestEventType: "update" | "insert" | "unknown";
+    latestFields: Record<string, unknown>;
+  }>;
   error?: string;
   details?: string;
 };
@@ -28,6 +38,7 @@ export default function HomePage() {
   const [data, setData] = useState<StatsResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedCollection, setSelectedCollection] = useState<string>("all");
 
   useEffect(() => {
     async function loadStats() {
@@ -51,12 +62,45 @@ export default function HomePage() {
   }, []);
 
   const formattedDate = useMemo(() => {
-    if (!data?.latestEntry?.updatedAt) return "-";
-    return new Date(data.latestEntry.updatedAt).toLocaleString("nl-NL", {
+    if (!data?.latestEntry?.eventAt) return "-";
+    return new Date(data.latestEntry.eventAt).toLocaleString("nl-NL", {
       dateStyle: "medium",
       timeStyle: "short",
     });
   }, [data]);
+
+  const latestFieldsText = useMemo(() => {
+    if (!data?.latestEntry?.document) return "-";
+    const fields = Object.entries(data.latestEntry.document)
+      .filter(([key]) => ["race_id", "stage_id", "rider_id", "team_id", "race_name", "stage_name", "rider_name", "team_name", "year", "position", "manager_points", "updated_at"].includes(key))
+      .slice(0, 12);
+
+    if (!fields.length) return "Geen herkenbare velden";
+
+    return fields
+      .map(([key, value]) => `${key}: ${String(value)}`)
+      .join("\n");
+  }, [data]);
+
+  const formatDate = (value: string | null) => {
+    if (!value) return "-";
+    return new Date(value).toLocaleString("nl-NL", {
+      dateStyle: "short",
+      timeStyle: "short",
+    });
+  };
+
+  const filteredCollections = useMemo(() => {
+    if (!data?.collections) {
+      return [];
+    }
+
+    if (selectedCollection === "all") {
+      return data.collections;
+    }
+
+    return data.collections.filter((item) => item.collection === selectedCollection);
+  }, [data, selectedCollection]);
 
   return (
     <main className="container">
@@ -78,11 +122,55 @@ export default function HomePage() {
             {data.latestEntry ? (
               <>
                 <p><strong>Collectie:</strong> {data.latestEntry.collection}</p>
+                <p><strong>Type:</strong> {data.latestEntry.eventType}</p>
                 <p><strong>ID:</strong> {getEntryLabel(data.latestEntry.document)}</p>
                 <p><strong>Toegevoegd/updated:</strong> {formattedDate}</p>
+                <p><strong>Exacte velden:</strong></p>
+                <pre className="fieldsPreview">{latestFieldsText}</pre>
               </>
             ) : (
               <p>Geen entry gevonden.</p>
+            )}
+          </article>
+
+          <article className="card span2">
+            <h2>Per collectie: wat is laatst aangepast?</h2>
+            <label className="filterLabel" htmlFor="collection-filter">
+              Collectie filter
+            </label>
+            <select
+              id="collection-filter"
+              className="collectionSelect"
+              value={selectedCollection}
+              onChange={(event) => setSelectedCollection(event.target.value)}
+            >
+              <option value="all">Alle collecties</option>
+              {data.collections.map((item) => (
+                <option key={item.collection} value={item.collection}>
+                  {item.collection}
+                </option>
+              ))}
+            </select>
+
+            {!filteredCollections.length ? (
+              <p>Geen collectie-data gevonden.</p>
+            ) : (
+              <div className="collectionList">
+                {filteredCollections.map((item) => (
+                  <div key={item.collection} className="collectionItem">
+                    <p><strong>{item.collection}</strong> ({item.count} entries)</p>
+                    <p>Laatste type: {item.latestEventType}</p>
+                    <p>Laatste update: {formatDate(item.latestUpdatedAt)}</p>
+                    <p>Laatste insert: {formatDate(item.latestInsertedAt)}</p>
+                    <p>Document ID: {item.latestDocumentId}</p>
+                    <pre className="fieldsPreview">
+                      {Object.entries(item.latestFields).length
+                        ? Object.entries(item.latestFields).map(([key, value]) => `${key}: ${String(value)}`).join("\n")
+                        : "Geen veld-preview"}
+                    </pre>
+                  </div>
+                ))}
+              </div>
             )}
           </article>
         </section>
