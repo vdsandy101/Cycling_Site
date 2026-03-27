@@ -74,7 +74,7 @@ function parseCSV(content: string): Record<string, string>[] {
 
 function getDataDir(): string {
   if (process.env.LINEUP_DATA_DIR) return process.env.LINEUP_DATA_DIR;
-  return path.join(process.cwd(), "..", "Cycling", "data");
+  return path.join(process.cwd(), "data");
 }
 
 export function loadLineupData(): RaceCard[] {

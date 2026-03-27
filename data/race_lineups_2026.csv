@@ -1,0 +1,221 @@
+race_date,race_name,race_type,rider_name,rider_slug,team_name,predicted_score,role_original,role_race,was_swapped_in
+2026-03-27,E3 Saxo Classic,World Tour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,starter,False
+2026-03-27,E3 Saxo Classic,World Tour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,starter,False
+2026-03-27,E3 Saxo Classic,World Tour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,starter,False
+2026-03-27,E3 Saxo Classic,World Tour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,starter,False
+2026-03-27,E3 Saxo Classic,World Tour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-03-27,E3 Saxo Classic,World Tour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-03-27,E3 Saxo Classic,World Tour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,starter,False
+2026-03-29,Gent-Wevelgem,World Tour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,starter,True
+2026-03-29,Gent-Wevelgem,World Tour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,starter,True
+2026-03-29,Gent-Wevelgem,World Tour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-03-29,Gent-Wevelgem,World Tour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-03-29,Gent-Wevelgem,World Tour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,starter,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,starter,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,starter,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,starter,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,starter,True
+2026-04-01,Dwars door Vlaanderen,World Tour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-04-01,Dwars door Vlaanderen,World Tour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-01,Dwars door Vlaanderen,World Tour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,starter,False
+2026-04-05,Ronde van Vlaanderen,Monument,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,starter,True
+2026-04-05,Ronde van Vlaanderen,Monument,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-04-05,Ronde van Vlaanderen,Monument,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-05,Ronde van Vlaanderen,Monument,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,starter,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,starter,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,starter,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,starter,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,starter,True
+2026-04-08,Scheldeprijs,Niet WorldTour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-04-08,Scheldeprijs,Niet WorldTour,Milan Menten,milan-menten,Lotto,291.1,bus,starter,True
+2026-04-08,Scheldeprijs,Niet WorldTour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-08,Scheldeprijs,Niet WorldTour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-12,Paris-Roubaix,Monument,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,starter,False
+2026-04-12,Paris-Roubaix,Monument,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,starter,False
+2026-04-12,Paris-Roubaix,Monument,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,starter,False
+2026-04-12,Paris-Roubaix,Monument,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,starter,False
+2026-04-12,Paris-Roubaix,Monument,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,starter,False
+2026-04-12,Paris-Roubaix,Monument,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,starter,False
+2026-04-12,Paris-Roubaix,Monument,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,starter,False
+2026-04-12,Paris-Roubaix,Monument,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,starter,True
+2026-04-12,Paris-Roubaix,Monument,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-04-12,Paris-Roubaix,Monument,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-04-12,Paris-Roubaix,Monument,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-12,Paris-Roubaix,Monument,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-04-12,Paris-Roubaix,Monument,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-12,Paris-Roubaix,Monument,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-04-12,Paris-Roubaix,Monument,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-12,Paris-Roubaix,Monument,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-04-12,Paris-Roubaix,Monument,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-12,Paris-Roubaix,Monument,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-12,Paris-Roubaix,Monument,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-12,Paris-Roubaix,Monument,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,starter,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-04-15,Ronde van Limburg,Niet WorldTour,Milan Menten,milan-menten,Lotto,291.1,bus,starter,True
+2026-04-15,Ronde van Limburg,Niet WorldTour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,starter,True
+2026-04-15,Ronde van Limburg,Niet WorldTour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-15,Ronde van Limburg,Niet WorldTour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Milan Menten,milan-menten,Lotto,291.1,bus,starter,True
+2026-04-17,Brabantse Pijl,Niet WorldTour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-17,Brabantse Pijl,Niet WorldTour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,starter,False
+2026-04-19,Amstel Gold Race,World Tour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,starter,False
+2026-04-19,Amstel Gold Race,World Tour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,starter,False
+2026-04-19,Amstel Gold Race,World Tour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,starter,True
+2026-04-19,Amstel Gold Race,World Tour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-19,Amstel Gold Race,World Tour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,starter,False
+2026-04-22,La Fleche Wallonne,World Tour,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,starter,False
+2026-04-22,La Fleche Wallonne,World Tour,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-22,La Fleche Wallonne,World Tour,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Tadej Pogacar,tadej-pogacar,UAE Team Emirates,332.8,starter,starter,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Remco Evenepoel,remco-evenepoel,Soudal Quick-Step,297.6,starter,starter,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Mathieu van der Poel,mathieu-van-der-poel,Alpecin-Deceuninck,285.3,starter,starter,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Jasper Philipsen,jasper-philipsen,Alpecin-Deceuninck,378.3,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Tim Merlier,tim-merlier,Soudal Quick-Step,363.1,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Paul Magnier,paul-magnier,Soudal Quick-Step,298.3,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Matthew Brennan,matthew-brennan,Team Visma | Lease a Bike,268.1,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Hugo Hofstetter,hugo-hofstetter,Israel-Premier Tech,282.7,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Christophe Laporte,christophe-laporte,Team Visma | Lease a Bike,311.1,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Matteo Trentin,matteo-trentin,Tudor Pro Cycling Team,290.8,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Pavel Bittner,pavel-bittner,Team Picnic PostNL,278.4,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Dylan Groenewegen,dylan-groenewegen,Team Jayco-AlUla,350.9,starter,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Emilien Jeanniere,emilien-jeanniere,TotalEnergies,324.3,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Milan Menten,milan-menten,Lotto,291.1,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Gerben Thijssen,gerben-thijssen,Intermarche-Wanty,283.5,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Marijn van den Berg,marijn-van-den-berg,EF Education-EasyPost,313.3,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Giovanni Lonardi,giovanni-lonardi,Team Polti-Visitmalta,327.3,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Matyas Kopecky,matyas-kopecky,Team Novo Nordisk,354.5,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Diego Pescador,diego-pescador,,242.4,bus,bench,False
+2026-04-26,Liege-Bastogne-Liege,Monument,Filip Orn-Kristoff,filip-orn-kristoff,Uno-X Mobility,150.0,bus,bench,False
