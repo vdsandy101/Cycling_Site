@@ -71,6 +71,31 @@ function getDataDir(): string {
   return path.join(process.cwd(), "data");
 }
 
+/**
+ * Load Andy's per-race racing riders from race_lineups_2026.csv (same source
+ * as the Lineup Planner). Returns a map: race_name → rider_name[].
+ * Only riders with assignment === "starter" are counted as racing.
+ */
+function loadAndyLineupPlan(dataDir: string): Map<string, string[]> {
+  const lineupPath = path.join(dataDir, "race_lineups_2026.csv");
+  if (!fs.existsSync(lineupPath)) return new Map();
+
+  const rows = parseCSV(fs.readFileSync(lineupPath, "utf-8"));
+  const raceRiders = new Map<string, string[]>();
+
+  for (const row of rows) {
+    const raceName = row.race_name;
+    const riderName = row.rider_name;
+    const assignment = row.assignment; // "starter" or "bench"
+    if (assignment === "starter" && raceName && riderName) {
+      if (!raceRiders.has(raceName)) raceRiders.set(raceName, []);
+      raceRiders.get(raceName)!.push(riderName);
+    }
+  }
+
+  return raceRiders;
+}
+
 export function loadComparisonData(): ComparisonData {
   const dataDir = getDataDir();
   const csvPath = path.join(dataDir, "squad_comparison_2026.csv");
@@ -93,12 +118,22 @@ export function loadComparisonData(): ComparisonData {
     }
   }
 
+  // Load Andy's lineup plan so his data matches the Lineup Planner tab
+  const andyLineup = loadAndyLineupPlan(dataDir);
+
   const today = new Date().toISOString().split("T")[0];
   const totals: Record<string, number> = {};
   for (const owner of owners) totals[owner] = 0;
 
   const races: ComparisonRace[] = rows.map((row) => {
     const ownerData: OwnerRaceData[] = owners.map((owner) => {
+      // For Andy: use the lineup plan data (consistent with Lineup Planner)
+      if (owner === "Andy" && andyLineup.has(row.race_name)) {
+        const riders = andyLineup.get(row.race_name)!;
+        const count = riders.length;
+        totals[owner] += count;
+        return { name: owner, count, riders };
+      }
       const count = parseInt(row[`${owner}_count`] || "0", 10);
       const ridersStr = row[`${owner}_riders`] || "";
       const riders = ridersStr ? ridersStr.split("|") : [];
