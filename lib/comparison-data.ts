@@ -86,7 +86,7 @@ function loadAndyLineupPlan(dataDir: string): Map<string, string[]> {
   for (const row of rows) {
     const raceName = row.race_name;
     const riderName = row.rider_name;
-    const assignment = row.assignment; // "starter" or "bench"
+    const assignment = row.role_race; // "starter" or "bench"
     if (assignment === "starter" && raceName && riderName) {
       if (!raceRiders.has(raceName)) raceRiders.set(raceName, []);
       raceRiders.get(raceName)!.push(riderName);
