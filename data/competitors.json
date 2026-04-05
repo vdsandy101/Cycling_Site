@@ -1,0 +1,106 @@
+{
+  "Tom": {
+    "starters": [
+      "Tadej Pogacar",
+      "Mathieu van der Poel",
+      "Paul Magnier",
+      "Matthew Brennan",
+      "Mathias Vacek",
+      "Biniam Girmay",
+      "Romain Gregoire",
+      "Christophe Laporte",
+      "Matej Mohoric",
+      "Florian Vermeersch",
+      "Lukas Kubis",
+      "Gianni Vermeersch"
+    ],
+    "bus": [
+      "Jasper Philipsen",
+      "Milan Fretin",
+      "Hugo Hofstetter",
+      "Jordi Meeus",
+      "Dries De Bondt",
+      "Dylan Groenewegen",
+      "Arne Marit",
+      "Toon Crabbe"
+    ]
+  },
+  "Sarah": {
+    "starters": [
+      "Wout van Aert",
+      "Tadej Pogacar",
+      "Mathieu van der Poel",
+      "Remco Evenepoel",
+      "Mads Pedersen",
+      "Soren Waerenskjold",
+      "Jarno Berckmoes",
+      "Lukas Kubis",
+      "Alec Segaert",
+      "Oliver Naesen",
+      "Tim van Dijke",
+      "Matyas Kopecky"
+    ],
+    "bus": [
+      "Jasper Philipsen",
+      "Giulio Ciccone",
+      "Milan Fretin",
+      "Jordi Meeus",
+      "Roger Adria",
+      "Vincenzo Albanese",
+      "Senne De Pestel",
+      "Jarne Hesters"
+    ]
+  },
+  "Kim": {
+    "starters": [
+      "Tadej Pogacar",
+      "Mathieu van der Poel",
+      "Remco Evenepoel",
+      "Milan Fretin",
+      "Christophe Laporte",
+      "Jordi Meeus",
+      "Florian Vermeersch",
+      "Kasper Asgreen",
+      "Jarno Berckmoes",
+      "Edoardo Affini",
+      "Edward Theuns",
+      "Sebastien Grignard"
+    ],
+    "bus": [
+      "Jasper Philipsen",
+      "Jonathan Milan",
+      "Richard Carapaz",
+      "Kaden Groves",
+      "Florian Lipowitz",
+      "Damiano Caruso",
+      "Ethan Hayter",
+      "Louis Vervaeke"
+    ]
+  },
+  "Joris": {
+    "starters": [
+      "Mathieu van der Poel",
+      "Tadej Pogacar",
+      "Wout van Aert",
+      "Jasper Philipsen",
+      "Paul Magnier",
+      "Matthew Brennan",
+      "Arnaud De Lie",
+      "Florian Vermeersch",
+      "Dries De Bondt",
+      "Stan Dewulf",
+      "Oliver Naesen",
+      "Brent Van Moer"
+    ],
+    "bus": [
+      "Tim Merlier",
+      "Ben Healy",
+      "Tim Wellens",
+      "Toon Crabbe",
+      "Silvan Dillier",
+      "Tobias Foss",
+      "Alexander Philipsen",
+      "Otto Vergaerde"
+    ]
+  }
+}

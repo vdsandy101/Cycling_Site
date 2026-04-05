@@ -14,6 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <nav className="site-nav">
           <a href="/" className="nav-link">DB Dashboard</a>
           <a href="/lineup" className="nav-link">Lineup Planner</a>
+          <a href="/vergelijking" className="nav-link">Vergelijking</a>
         </nav>
         {children}
       </body>

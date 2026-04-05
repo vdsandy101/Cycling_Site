@@ -588,3 +588,274 @@ h1 {
     display: none;
   }
 }
+
+/* ===================================================================
+   Vergelijking / Comparison Dashboard
+   =================================================================== */
+
+.comp-dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.comp-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.25rem;
+}
+
+.comp-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+}
+
+/* Summary cards */
+.comp-summary-bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.comp-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  flex: 1;
+  min-width: 140px;
+}
+
+.comp-summary-leader {
+  background: linear-gradient(135deg, #fefce8, #fef9c3);
+  border-color: #fbbf24;
+}
+
+.comp-summary-rank {
+  font-size: 1.1rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.comp-summary-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.comp-summary-total {
+  margin-left: auto;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Table */
+.comp-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.comp-table thead {
+  background: #f1f5f9;
+}
+
+.comp-table th {
+  padding: 0.65rem 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.comp-th-race {
+  text-align: left !important;
+  min-width: 220px;
+}
+
+.comp-th-owner {
+  min-width: 60px;
+}
+
+.comp-th-expand {
+  width: 32px;
+}
+
+/* Row styles */
+.comp-row {
+  transition: background 0.15s;
+}
+
+.comp-row:hover {
+  background: #f8fafc;
+}
+
+.comp-row-past {
+  opacity: 0.5;
+}
+
+.comp-row-today {
+  background: #eff6ff;
+  border-left: 3px solid #3b82f6;
+}
+
+.comp-cell-race {
+  padding: 0.65rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.comp-race-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.comp-race-date {
+  color: #94a3b8;
+  font-size: 0.78rem;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.comp-cell-count {
+  text-align: center;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+  font-weight: 500;
+  color: #334155;
+  font-variant-numeric: tabular-nums;
+}
+
+.comp-cell-best {
+  background: #ecfdf5;
+  color: #059669;
+  font-weight: 700;
+}
+
+.comp-cell-zero {
+  color: #cbd5e1;
+}
+
+.comp-cell-total {
+  font-size: 0.95rem;
+}
+
+.comp-cell-expand {
+  text-align: center;
+  padding: 0.65rem 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+.comp-footer-row {
+  background: #f8fafc;
+  border-top: 2px solid #e2e8f0;
+}
+
+.comp-footer-row td {
+  padding: 0.75rem;
+}
+
+/* Expanded detail */
+.comp-detail-row td {
+  padding: 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.comp-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f8fafc;
+}
+
+.comp-rider-list {
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+}
+
+.comp-rider-list-best {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.comp-rider-list h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #334155;
+  margin: 0 0 0.4rem;
+}
+
+.comp-rider-count {
+  font-weight: 400;
+  color: #94a3b8;
+}
+
+.comp-rider-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comp-rider-list li {
+  font-size: 0.78rem;
+  color: #475569;
+  padding: 0.1rem 0;
+}
+
+.comp-no-riders {
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .comp-summary-bar {
+    flex-direction: column;
+  }
+
+  .comp-summary-card {
+    min-width: 100%;
+  }
+
+  .comp-th-owner {
+    font-size: 0.75rem;
+    min-width: 40px;
+    padding: 0.5rem 0.3rem;
+  }
+
+  .comp-cell-count {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .comp-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .comp-race-date {
+    display: none;
+  }
+}
